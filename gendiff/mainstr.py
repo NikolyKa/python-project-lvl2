@@ -6,4 +6,6 @@ def parser():
     files and shows a difference.')
     pars.add_argument('first_file')
     pars.add_argument('second_file')
-    pars.print_help()
+    pars.add_argument('-f', '--format ', help='set format of output')
+    args = pars.parse_args()
+    return args
