@@ -1,19 +1,19 @@
 from gendiff.diff import generate_diff
-
-correct_answer = """
-{
-  "- follow": false,
-  " host": "hexlet.io",
-  "- proxy": "123.234.53.22",
-  "+ timeout": 50,
-  "- timeout": 20,
-  "+ verbose": true
-}
-"""
+import pytest
+import os
 
 
-def test_generate_diff():
-    first_file_path = 'gendiff/tests/fixture/files/file1.`json'
-    second_file_path = 'gendiff/tests/fixture/files/file2.json'
-    result = generate_diff(first_file_path, second_file_path)
-    assert result == correct_answer
+@pytest.mark.parametrize(
+    'first_file, second_file, result_file',
+    [
+        ('gendiff/tests/fixtures/file1.json',
+         'gendiff/tests/fixtures/file2.json',
+         'gendiff/tests/fixtures/correct_answer')
+    ],
+)
+def test_generate_diff(first_file, second_file, result_file):
+    with open(os.path.abspath(result_file)) as res:
+        result = res.read()
+    assert generate_diff(first_file, second_file) == result
+    assert type(result) == str
+    assert type(generate_diff(first_file, second_file)) == str
