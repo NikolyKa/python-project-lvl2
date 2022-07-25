@@ -25,7 +25,7 @@ jobs:
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
          env:
-           CC_TEST_REPORTER_ID: 19c4b2f13c2b6c5363509c8bc26e419a5d50e77aa8da71fd5fe6ba4a73436515
+           CC_TEST_REPORTER_ID: bfa36b03f0a5d0f6122b291d46bb6e0e575c94f956a3629431126b30db6c8bff
          with:
            coverageCommand: poetry run pytest --cov=gendiff --cov-report xml
            debug: true
