@@ -24,8 +24,8 @@ jobs:
           make lint
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
-         env:
-           CC_TEST_REPORTER_ID: bfa36b03f0a5d0f6122b291d46bb6e0e575c94f956a3629431126b30db6c8bff
-         with:
+        env:
+         CC_TEST_REPORTER_ID: bfa36b03f0a5d0f6122b291d46bb6e0e575c94f956a3629431126b30db6c8bff
+        with:
            coverageCommand: poetry run pytest --cov=gendiff --cov-report xml
            debug: true
