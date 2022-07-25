@@ -32,10 +32,10 @@ def generate_diff(first_path, second_path):
 
     for i, j in sorted_pairs:
         if (i, j) in missed:
-            diff.append(("- "+i,j))
+            diff.append(("- " + i, j))
         elif (i, j) in extra:
-            diff.append(('+ '+i,j))
+            diff.append(('+ ' + i, j))
         else:
-            diff.append((" "+i,j))
+            diff.append((" " + i, j))
     diff = json.dumps(dict(diff), indent=2)
     return diff
