@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c72b5c07-1517-4039-beaa-ce362e5d12d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answer" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/correct_answer_json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/file1.json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/file1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/file2.json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/file2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +47,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gendiff/tests" />
+      <recent name="$PROJECT_DIR$/gendiff/tests/fixtures/json" />
       <recent name="$PROJECT_DIR$/gendiff" />
       <recent name="$PROJECT_DIR$/gendiff/scripts" />
     </key>
@@ -126,5 +135,16 @@
       <updated>1658309153841</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
