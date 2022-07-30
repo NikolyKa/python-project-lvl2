@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c72b5c07-1517-4039-beaa-ce362e5d12d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gendiff/diff_old.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/diff.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/mainstr.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/mainstr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/json/correct_answer_json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answers/correct_answer_flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/yaml/correct_answer_yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_yaml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/data_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/engine/data_extractor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +48,7 @@
       <recent name="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_gen_diff_json.py">
+  <component name="RunManager" selected="Python.data_extractor">
     <configuration name="data_extractor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-project-lvl2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,10 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_extractor" />
         <item itemvalue="Python tests.Python tests in test_gen_diff_json.py" />
         <item itemvalue="Python.engine" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.data_extractor" />
         <item itemvalue="Python.mainstr" />
       </list>
     </recent_temporary>
