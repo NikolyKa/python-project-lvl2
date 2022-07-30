@@ -10,7 +10,7 @@ package-install: #устанавливает пакет
 lint: #проверяет код на чистоту
 	poetry run flake8 gendiff
 test: 
-	poetry run pytest gendiff
+	poetry run pytest gendiff -vv
 test-coverage:
 	poetry run pytest --cov=gendiff --cov-report xml
 

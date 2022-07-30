@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c72b5c07-1517-4039-beaa-ce362e5d12d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gendiff/diff_old.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/diff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answer" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/correct_answer_json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/file1.json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/file1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/file2.json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/json/file2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/mainstr.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/mainstr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/json/correct_answer_json" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answers/correct_answer_flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/fixtures/yaml/correct_answer_yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/tests/test_gen_diff_yaml.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +51,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gendiff/tests" />
       <recent name="$PROJECT_DIR$/gendiff/tests/fixtures/json" />
-      <recent name="$PROJECT_DIR$/gendiff" />
-      <recent name="$PROJECT_DIR$/gendiff/scripts" />
+      <recent name="$PROJECT_DIR$/gendiff/engine" />
+      <recent name="$PROJECT_DIR$/gendiff/formaters" />
+      <recent name="$PROJECT_DIR$/gendiff/tests" />
+      <recent name="$PROJECT_DIR$/gendiff/tests/fixtures/correct_answers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="gendiff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_gen_diff_json.py">
+    <configuration name="data_extractor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-project-lvl2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,11 +67,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gendiff/engine" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/gendiff" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gendiff/engine/data_extractor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-project-lvl2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gendiff/engine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gendiff/engine/engine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,11 +143,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_gen_diff_json.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-project-lvl2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gendiff/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/gendiff/tests/test_gen_diff_json.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_gen_diff_json.py" />
+        <item itemvalue="Python.engine" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.data_extractor" />
         <item itemvalue="Python.mainstr" />
-        <item itemvalue="Python.gendiff" />
       </list>
     </recent_temporary>
   </component>
