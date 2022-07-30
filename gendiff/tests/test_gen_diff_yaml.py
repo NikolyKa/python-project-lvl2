@@ -6,8 +6,8 @@ import os
 @pytest.mark.parametrize(
     'first_file, second_file, result_file',
     [
-        ('gendiff/tests/fixtures/yaml/file1.yaml',
-         'gendiff/tests/fixtures/yaml/file2.yaml',
+        ('file1.yaml',
+         'file2.yaml',
          'gendiff/tests/fixtures/correct_answers/correct_answer_flat')
     ],
 )
