@@ -6,3 +6,5 @@
 [![tests](https://github.com/NikolyKa/python-project-lvl2/actions/workflows/tests.yml/badge.svg)](https://github.com/NikolyKa/python-project-lvl2/actions/workflows/tests.yml)
 ## Step Five
 [![asciicast](https://asciinema.org/a/yknJyMf791U077fr62A7SPilj.svg)](https://asciinema.org/a/yknJyMf791U077fr62A7SPilj)
+## Step Six
+[![asciicast](https://asciinema.org/a/3DgfpkMtEeCA6shz4cRct0oMF.svg)](https://asciinema.org/a/3DgfpkMtEeCA6shz4cRct0oMF)
