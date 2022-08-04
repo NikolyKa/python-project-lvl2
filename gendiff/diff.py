@@ -2,7 +2,7 @@ from gendiff.engine.data_extractor import get_data
 from gendiff.engine.engine import collect_diff_segments
 from gendiff.engine.stylish import stylish
 
-styles = {'stylish':stylish}
+styles = {'stylish': stylish}
 
 
 def generate_diff(first_file, second_file, form='stylish'):
