@@ -2,4 +2,4 @@ __pycache__
 coverage.xml
 .coverage
 dist/
-idea/
+.idea/
