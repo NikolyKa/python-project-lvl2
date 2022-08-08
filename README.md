@@ -10,3 +10,5 @@
 [![asciicast](https://asciinema.org/a/3DgfpkMtEeCA6shz4cRct0oMF.svg)](https://asciinema.org/a/3DgfpkMtEeCA6shz4cRct0oMF)
 ## Step Seven
 [![asciicast](https://asciinema.org/a/65uPdNTUp0jS9zKBmqUjRBwMR.svg)](https://asciinema.org/a/65uPdNTUp0jS9zKBmqUjRBwMR)
+## Step Eight
+[![asciicast](https://asciinema.org/a/GCajRsxAxaIIPuXHmDmzKpUwi.svg)](https://asciinema.org/a/GCajRsxAxaIIPuXHmDmzKpUwi)
