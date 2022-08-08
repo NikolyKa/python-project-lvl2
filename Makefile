@@ -1,6 +1,5 @@
 install: #установление зависимостей
 	poetry install
-
 build: #собирает программу
 	poetry build 
 publish: #публикует программу
@@ -9,8 +8,8 @@ package-install: #устанавливает пакет
 	python3 -m pip install --user --force-reinstall dist/*.whl
 lint: #проверяет код на чистоту
 	poetry run flake8 gendiff
-test: 
-	poetry run pytest gendiff -vv
-test-coverage:
+	poetry run flake8 tests
+test: #проверяет программу на работоспособность
+	poetry run pytest
+test-coverage: #проверяет покрытие тестами
 	poetry run pytest --cov=gendiff --cov-report xml
-

@@ -6,9 +6,9 @@ import os
 @pytest.mark.parametrize(
     'first_file, second_file, result_file',
     [
-        ('gendiff/tests/fixtures/yaml/Rfile1.yaml',
-         'gendiff/tests/fixtures/yaml/Rfile2.yaml',
-         'gendiff/tests/fixtures/correct_answers/nested')
+        ('tests/fixtures/yaml/file1.yml',
+         'tests/fixtures/yaml/file2.yml',
+         'tests/fixtures/correct_answers/correct_answer_flat')
     ],
 )
 def test_generate_diff(first_file, second_file, result_file):
