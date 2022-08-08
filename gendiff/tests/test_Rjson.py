@@ -6,8 +6,8 @@ import os
 @pytest.mark.parametrize(
     'first_file, second_file, result_file',
     [
-        ('Rfile1.json',
-         'Rfile2.json',
+        ('gendiff/tests/fixtures/json/Rfile1.json',
+         'gendiff/tests/fixtures/json/Rfile2.json',
          'gendiff/tests/fixtures/correct_answers/nested')
     ],
 )

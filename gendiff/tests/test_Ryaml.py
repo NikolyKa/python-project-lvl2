@@ -6,8 +6,8 @@ import os
 @pytest.mark.parametrize(
     'first_file, second_file, result_file',
     [
-        ('Rfile1.yaml',
-         'Rfile2.yaml',
+        ('gendiff/tests/fixtures/yaml/Rfile1.yaml',
+         'gendiff/tests/fixtures/yaml/Rfile2.yaml',
          'gendiff/tests/fixtures/correct_answers/nested')
     ],
 )
