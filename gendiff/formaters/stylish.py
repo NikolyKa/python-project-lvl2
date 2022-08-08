@@ -37,7 +37,7 @@ def stylish(dict_):
 
 def values(value, depth):
     if isinstance(value, dict):
-        return convert_dict_to_str(value, depth + 1)
+        return convert(value, depth + 1)
     elif len(str(value)) == 0:
         return '\n'
     else:
@@ -47,12 +47,12 @@ def values(value, depth):
             return f' {value}\n'
 
 
-def convert_dict_to_str(dictionary, depth):
+def convert(dictionary, depth):
     indent = "    " * depth
-    result = ' {\n'
+    res = ' {\n'
     keys = dictionary.keys()
     for key in keys:
         value = dictionary.get(key)
-        result += f'{indent}    {key}:' + values(value, depth)
-    result += indent + '}\n'
-    return result
+        res += f'{indent}    {key}:' + values(value, depth)
+    res += indent + '}\n'
+    return res
