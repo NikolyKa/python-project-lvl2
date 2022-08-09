@@ -10,6 +10,6 @@ lint: #проверяет код на чистоту
 	poetry run flake8 gendiff
 	poetry run flake8 tests
 test: #проверяет программу на работоспособность
-	poetry run pytest
+	poetry run pytest -vv
 test-coverage: #проверяет покрытие тестами
 	poetry run pytest --cov=gendiff --cov-report xml
