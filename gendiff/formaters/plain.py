@@ -1,7 +1,7 @@
 import json
 
 
-def plain(data, path=[]):
+def plain_format(data, path=[]):
     result = []
     keys = data.keys()
     for key in keys:
@@ -21,7 +21,7 @@ def plain(data, path=[]):
             result.append(f"Property '{'.'.join(path)}' was updated. "
                           f"From {values[0]} to {values[1]}")
         elif status == 'nested':
-            result.append(plain(value))
+            result.append(plain_format(value))
         path.pop()
     return '\n'.join(result)
 

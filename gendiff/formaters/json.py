@@ -1,5 +1,5 @@
 import json
 
 
-def jsons(data):
+def json_format(data):
     return json.dumps(data)

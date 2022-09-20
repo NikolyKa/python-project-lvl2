@@ -8,7 +8,7 @@ import os
     [
         ('tests/fixtures/yaml/file1.yaml',
          'tests/fixtures/yaml/file2.yaml',
-         'tests/fixtures/correct_answers/correct_answer_flat')
+         'tests/fixtures/correct_answers/flat')
     ],
 )
 def test_generate_diff(first_file, second_file, result_file):
