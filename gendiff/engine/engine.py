@@ -3,23 +3,30 @@ def collect_diff_segments(first_dict, second_dict):
     sorted_keys = sorted(keys)
     result = {}
     for key in sorted_keys:
-        val1, val2 = first_dict.get(key), second_dict.get(key)
+        value1, value2 = first_dict.get(key), second_dict.get(key)
+
         if key not in first_dict:
             status = 'added'
-            value = val2
+            value = value2
+
         elif key not in second_dict:
             status = 'deleted'
-            value = val1
-        elif val1 == val2:
+            value = value1
+
+        elif value1 == value2:
             status = 'unchanged'
-            value = val1
-        elif isinstance(val1, dict) and isinstance(val2, dict):
+            value = value1
+
+        elif isinstance(value1, dict) and isinstance(value2, dict):
             status = 'nested'
-            value = collect_diff_segments(val1, val2)
-        elif val1 != val2:
+            value = collect_diff_segments(value1, value2)
+
+        elif value1 != value2:
             status = 'changed'
-            value = val1, val2
+            value = value1, value2
+
         result[key] = {
             'status': status,
             'value': value}
+
     return result
