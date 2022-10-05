@@ -11,9 +11,4 @@ def parse_yaml(file_path):
 
 
 def get_content(file_path):
-    if file_path.endswith('.json'):
-        with open(file_path) as file_:
-            return parse_json(file_)
-    elif file_path.endswith('.yaml') or file_path.endswith('.yml'):
-        with open(file_path) as file_:
-            return parse_yaml(file_)
+    return open(file_path)
