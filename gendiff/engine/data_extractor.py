@@ -11,5 +11,5 @@ def parse_yaml(file_content):
 
 
 def get_content(file_path):
-    with open(file_path) as file_:
-        return file_.read()
+    with open(file_path) as file:
+        return file.read()
