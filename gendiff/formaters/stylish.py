@@ -45,15 +45,15 @@ def rewrite(key, child, depth):
         result += get_values(value2, depth)
     elif status == 'added':
         result = f'{indent}{INDENTS["+"]}{key}:' \
-                f'{INDENTS["low"]}'
+                 f'{INDENTS["low"]}'
         result += get_values(value, depth)
     elif status == 'deleted':
         result = f'{indent}{INDENTS["-"]}{key}:' \
-                f'{INDENTS["low"]}'
+                 f'{INDENTS["low"]}'
         result += get_values(value, depth)
     elif status == 'unchanged':
         result = f'{indent}{INDENTS["big"]}{key}:' \
-                f'{INDENTS["low"]}'
+                 f'{INDENTS["low"]}'
         result += get_values(value, depth)
     return result
 
