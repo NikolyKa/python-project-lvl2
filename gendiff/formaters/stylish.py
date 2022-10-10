@@ -5,14 +5,14 @@ INDENTS = {'big': '    ', 'low': ' ', '-': '  - ', '+': '  + '}
 
 def convert(dictionary, depth):
     indent = INDENTS["big"] * depth
-    res = '{\n'
+    result = '{\n'
     keys = dictionary.keys()
     for key in keys:
         value = dictionary.get(key)
-        res += f'{indent}{INDENTS["big"]}{key}:{INDENTS["low"]}'
-        res += get_values(value, depth)
-    res += indent + '}\n'
-    return res
+        result += f'{indent}{INDENTS["big"]}{key}:{INDENTS["low"]}'
+        result += get_values(value, depth)
+    result += indent + '}\n'
+    return result
 
 
 def stylish_format(diff):
@@ -21,43 +21,41 @@ def stylish_format(diff):
     keys = diff.keys()
     for key in keys:
         child = diff[key]
-        result += converter(key, child, depth)
+        result += rewrite(key, child, depth)
     result += '}'
     return result
 
 
-def converter(key, child, depth):
+def rewrite(key, child, depth):
     indent = INDENTS["big"] * depth
     status, value = child['status'], child['value']
-    results = ''
+    result = ''
     if status == 'nested':
-        results += f'{indent}{INDENTS["big"]}{key}:{INDENTS["low"]}'
-        results += '{\n'
+        result += f'{indent}{INDENTS["big"]}{key}:{INDENTS["low"]}'
+        result += '{\n'
         for k, v in value.items():
-            results += converter(k, v, depth + 1)
-        results += f'{indent}{INDENTS["big"]}'
-        results += '}\n'
+            result += rewrite(k, v, depth + 1)
+        result += f'{indent}{INDENTS["big"]}'
+        result += '}\n'
     elif status == 'changed':
         value1, value2 = value
-        results += f'{indent}{INDENTS["-"]}{key}:' \
-                   f'{INDENTS["low"]}'
-        results += get_values(value1, depth)
-        results += f'{indent}{INDENTS["+"]}{key}:' \
-                   f'{INDENTS["low"]}'
-        results += get_values(value2, depth)
+        result += f'{indent}{INDENTS["-"]}{key}:'f'{INDENTS["low"]}'
+        result += get_values(value1, depth)
+        result += f'{indent}{INDENTS["+"]}{key}:'f'{INDENTS["low"]}'
+        result += get_values(value2, depth)
     elif status == 'added':
-        results = f'{indent}{INDENTS["+"]}{key}:' \
+        result = f'{indent}{INDENTS["+"]}{key}:' \
                   f'{INDENTS["low"]}'
-        results += get_values(value, depth)
+        result += get_values(value, depth)
     elif status == 'deleted':
-        results = f'{indent}{INDENTS["-"]}{key}:' \
+        result = f'{indent}{INDENTS["-"]}{key}:' \
                   f'{INDENTS["low"]}'
-        results += get_values(value, depth)
+        result += get_values(value, depth)
     elif status == 'unchanged':
-        results = f'{indent}{INDENTS["big"]}{key}:' \
+        result = f'{indent}{INDENTS["big"]}{key}:' \
                   f'{INDENTS["low"]}'
-        results += get_values(value, depth)
-    return results
+        result += get_values(value, depth)
+    return result
 
 
 def get_values(value, depth):
