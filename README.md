@@ -9,7 +9,7 @@
 
 ### This program find differences between two configuration files.
 
-### Supported formats: 
+### Supported formats:  
 - **YAML**,
 - **YML**,
 - **JSON**.
